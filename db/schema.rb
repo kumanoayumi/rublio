@@ -24,12 +24,12 @@ ActiveRecord::Schema.define(:version => 20120719131720) do
   add_index "group_members", ["user_id"], :name => "index_group_members_on_user_id"
 
   create_table "groups", :force => true do |t|
-    t.integer   "user_id"
-    t.string    "name"
-    t.boolean   "default_flag", :default => false
-    t.timestamp "created_at",                          :null => false
-    t.timestamp "updated_at",                          :null => false
-    t.string    "permission",   :default => "private"
+    t.integer  "user_id"
+    t.string   "name"
+    t.boolean  "default_flag", :default => false
+    t.datetime "created_at",                          :null => false
+    t.datetime "updated_at",                          :null => false
+    t.string   "permission",   :default => "private"
   end
 
   create_table "pages", :force => true do |t|
@@ -43,15 +43,15 @@ ActiveRecord::Schema.define(:version => 20120719131720) do
   end
 
   create_table "users", :force => true do |t|
-    t.string    "provider"
-    t.string    "uid"
-    t.string    "name"
-    t.string    "screen_name"
-    t.string    "image"
-    t.string    "token"
-    t.string    "secret"
-    t.timestamp "created_at",  :null => false
-    t.timestamp "updated_at",  :null => false
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "screen_name"
+    t.string   "image"
+    t.string   "token"
+    t.string   "secret"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end
