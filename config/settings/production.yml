@@ -1,3 +1,0 @@
-# Twitter OAuth Local Setting
-twitter_key:    <%= ENV['TWITTER_KEY'] %>
-twitter_secret: <%= ENV['TWITTER_SECRET'] %>
